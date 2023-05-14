@@ -123,7 +123,7 @@ def nabla_f(x):
 
 def test():
     gdl = GDL(2, 2, f, nabla_f, (1, 1, f((1, 1))))
-    print(gdl.desc())
+    print(gdl.asc()) # should be inf as x^2+y^2 has no highest point as x -> inf
 
 
 test()
