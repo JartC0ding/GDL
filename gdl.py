@@ -3,6 +3,7 @@ from typing import *
 import numpy as np
 
 
+# Main class
 class GDL:
     # start point has to have the result as the last element in the tuple
     def __init__(self, number_of_variables: int, degree: int, function: Callable, gradient: Callable, starting_point: Tuple[float, ...]) -> None:
